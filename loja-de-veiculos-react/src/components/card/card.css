@@ -1,0 +1,43 @@
+.card{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: black 0px 7px 29px 0px;
+    padding: 0;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    width: 300px;
+    height: 220px;
+}
+
+b{
+    padding: 0;
+    font-size: 15px;
+}
+
+p{  
+    margin-top: -1px;
+    margin-bottom: -1px;
+    font-size: 14px;
+}
+
+.information{
+    padding: 0 20px 20px 20px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.title h2{
+    margin: 5px 0px 5px 0px;
+}

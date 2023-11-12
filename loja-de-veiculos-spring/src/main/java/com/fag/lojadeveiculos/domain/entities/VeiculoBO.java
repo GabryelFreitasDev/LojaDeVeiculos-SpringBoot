@@ -1,6 +1,6 @@
 package com.fag.lojadeveiculos.domain.entities;
 
-import java.util.List;
+import java.math.BigDecimal;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,7 +8,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -27,6 +26,8 @@ public class VeiculoBO {
     private Long id;
     @Column(name = "nome")
     private String nome;
+    @Column(name = "valor")
+    private BigDecimal valor;
     @Column(name = "marca")
     private String marca;
     @Column(name = "cor")
@@ -45,4 +46,6 @@ public class VeiculoBO {
     private String placa;
     @Column(name = "descricao")
     private String descricao;
+    @Column(name = "imagem")
+    private String imagem;
 }

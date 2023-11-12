@@ -3,7 +3,7 @@ package com.fag.lojadeveiculos.domain.mapper;
 import com.fag.lojadeveiculos.domain.CombustivelEnum;
 import com.fag.lojadeveiculos.domain.dto.VeiculoDTO;
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
-import com.fag.lojadeveiculos.infra.repositories.VeiculoImagemRepository;
+
 
 public class VeiculoMapper {
     public static VeiculoDTO toDTO(VeiculoBO veiculo) {
@@ -11,6 +11,7 @@ public class VeiculoMapper {
 
         veiculoDTO.setId(veiculo.getId());
         veiculoDTO.setNome(veiculo.getNome());
+        veiculoDTO.setValor(veiculo.getValor());
         veiculoDTO.setMarca(veiculo.getMarca());
         veiculoDTO.setCor(veiculo.getCor());
         veiculoDTO.setCombustivel(CombustivelEnum.getCombustivelById(veiculo.getCombustivel()).getNome());
@@ -20,6 +21,7 @@ public class VeiculoMapper {
         veiculoDTO.setPotencia(veiculo.getPotencia());
         veiculoDTO.setPlaca(veiculo.getPlaca());
         veiculoDTO.setDescricao(veiculo.getDescricao());
+        veiculoDTO.setImagem(veiculo.getImagem());
 
         return veiculoDTO;
     }
@@ -28,6 +30,7 @@ public class VeiculoMapper {
         return new VeiculoBO(
                 veiculo.getId(),
                 veiculo.getNome(),
+                veiculo.getValor(),
                 veiculo.getMarca(),
                 veiculo.getCor(),
                 CombustivelEnum.getCombustivelByNome(veiculo.getCombustivel()).getId(),
@@ -36,6 +39,7 @@ public class VeiculoMapper {
                 veiculo.getQuilometragem(),
                 veiculo.getPotencia(),
                 veiculo.getPlaca(),
-                veiculo.getDescricao());
+                veiculo.getDescricao(),
+                veiculo.getImagem());
     }
 }
