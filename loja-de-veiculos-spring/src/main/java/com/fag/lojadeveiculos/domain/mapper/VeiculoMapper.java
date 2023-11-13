@@ -4,7 +4,6 @@ import com.fag.lojadeveiculos.domain.CombustivelEnum;
 import com.fag.lojadeveiculos.domain.dto.VeiculoDTO;
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
 
-
 public class VeiculoMapper {
     public static VeiculoDTO toDTO(VeiculoBO veiculo) {
         VeiculoDTO veiculoDTO = new VeiculoDTO();
@@ -20,7 +19,6 @@ public class VeiculoMapper {
         veiculoDTO.setQuilometragem(veiculo.getQuilometragem());
         veiculoDTO.setPotencia(veiculo.getPotencia());
         veiculoDTO.setPlaca(veiculo.getPlaca());
-        veiculoDTO.setDescricao(veiculo.getDescricao());
         veiculoDTO.setImagem(veiculo.getImagem());
 
         return veiculoDTO;
@@ -39,7 +37,6 @@ public class VeiculoMapper {
                 veiculo.getQuilometragem(),
                 veiculo.getPotencia(),
                 veiculo.getPlaca(),
-                veiculo.getDescricao(),
                 veiculo.getImagem());
     }
 }

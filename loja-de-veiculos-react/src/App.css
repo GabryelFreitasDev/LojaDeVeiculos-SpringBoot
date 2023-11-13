@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 100vw
+  justify-content: space-between;
+  position: absolute; 
+  top: 0;
+  width: 100%
 }
 
 .card-grid {
@@ -12,7 +14,43 @@
   gap: 40px;
 }
 
+.container button {
+  margin: 10px;
+}
+
 .container button:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
   transform: scale(1.1);
+}
+
+.add-button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.card-add{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  min-height: 510px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: black 0px 7px 29px 0px;
+  padding: 0;
+}
+
+.card-add .add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  min-width: 100px;
+  min-height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-right: 10px;
 }

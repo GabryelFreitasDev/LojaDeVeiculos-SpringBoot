@@ -1,18 +1,40 @@
+import { useState } from 'react';
 import { useVeiculoDataMutateDelete } from '../../hooks/useVeiculoDataMutate'
 import { VeiculoData } from '../../interface/VeiculoData'
 import './card.css'
+import { CreateModal } from '../register-modal/register-modal';
 
 export function Card({ id, nome, valor, marca, cor, combustivel, anoFabricacao, anoModelo, quilometragem, potencia, placa, imagem }: VeiculoData) {
-    const { mutate, isSuccess } = useVeiculoDataMutateDelete();
+    const { mutate } = useVeiculoDataMutateDelete();
 
-    const submit = () => {
+    const veiculoData: VeiculoData = {
+        id,
+        nome,
+        valor,
+        marca,
+        cor,
+        combustivel,
+        anoFabricacao,
+        anoModelo,
+        quilometragem,
+        potencia,
+        placa,
+        imagem
+    }
+
+    const excluir = () => {
         mutate(id);
     }
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalOpen(prev => !prev)
+    }
 
     return (
         <div className="card">
-            <img src={imagem}/>
+            <img src={imagem} />
             <div className='title'>
                 <h2>{nome}</h2>
             </div>
@@ -25,9 +47,17 @@ export function Card({ id, nome, valor, marca, cor, combustivel, anoFabricacao, 
                 <p><b>Quilometragem:</b> {quilometragem.toLocaleString()} KM</p>
                 <p><b>Potencia:</b> {potencia.toLocaleString()} CV</p>
                 <p><b>Placa:</b> {placa}</p>
-                <button onClick={submit}>remover</button>
+
+                <div className='value-container'>
+                    <p className='value'><b>R$</b> {valor.toLocaleString()} </p>
+                </div>
+
+                <div className='button-container'>
+                    {isModalOpen && <CreateModal closeModal={handleOpenModal} data={veiculoData} />}
+                    <button className="button-edit" onClick={handleOpenModal}>Editar</button>
+                    <button className="button-remove" onClick={excluir}>Remover</button>
+                </div>
             </div>
 
-            
         </div>)
 }

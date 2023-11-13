@@ -1,0 +1,100 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: auto;
+}
+
+.modal-body {
+    background-color: white;
+    padding: 24px;
+    border-radius: 24px;
+    max-width: 80%;
+    width: 1000px; 
+    max-height: 100%;
+    overflow-y: auto; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-body h2 {
+    font-size: 24px;
+}
+
+.modal-body img {
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+.input-container {
+    margin: 12px 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.button-container .button-save {
+    font-size: 14px;
+    min-width: 150px; 
+    min-height: 30px;
+    padding: 10px 16px;
+    background-color: green;
+}
+
+.button-container .button-cancel {
+    font-size: 12px;
+    min-width: 80px; 
+    min-height: 30px;
+    background-color: red;
+}
+
+input, select {
+    padding: 12px;
+    border: 2px solid #c6c5c5;
+    color: #333;
+    font-size: 18px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.input-container label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+}
+
+.input-container .input-line{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content:space-between;
+    box-sizing: border-box;
+}
+
+.input-container .input-line .input-prop {
+    width: 100%;
+    margin: 10px;
+}

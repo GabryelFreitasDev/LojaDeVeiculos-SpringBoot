@@ -1,9 +1,6 @@
 package com.fag.lojadeveiculos.domain.dto;
 
 import java.math.BigDecimal;
-import java.util.List;
-
-import com.fag.lojadeveiculos.domain.entities.VeiculoImagemBO;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,6 +19,5 @@ public class VeiculoDTO {
     private int quilometragem;
     private int potencia;
     private String placa;
-    private String descricao;
     private String imagem;
 }

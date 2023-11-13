@@ -26,7 +26,7 @@ public class VeiculoBO {
     private Long id;
     @Column(name = "nome")
     private String nome;
-    @Column(name = "valor")
+    @Column(name = "valor", columnDefinition = "NUMERIC(40,8)")
     private BigDecimal valor;
     @Column(name = "marca")
     private String marca;
@@ -44,8 +44,6 @@ public class VeiculoBO {
     private int potencia;
     @Column(name = "placa")
     private String placa;
-    @Column(name = "descricao")
-    private String descricao;
     @Column(name = "imagem")
     private String imagem;
 }

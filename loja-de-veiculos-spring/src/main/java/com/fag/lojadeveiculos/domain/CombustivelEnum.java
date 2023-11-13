@@ -10,10 +10,11 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum CombustivelEnum {
     GASOLINA(1, "GASOLINA"),
-    ALCOOL(2, "ÁLCOOL"),
+    ALCOOL(2, "ETANOL"),
     FLEX(3, "FLEX"),
     DIESEL(4, "DIESEL"),
-    ELETRICO(5, "ELETRICO");
+    HIBRIDO(5, "HIBRIDO"),
+    ELETRICO(6, "ELETRICO");
 
     private int id;
     private String nome;

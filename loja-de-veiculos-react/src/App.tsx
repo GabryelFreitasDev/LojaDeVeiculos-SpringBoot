@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import { Card } from './components/card/card'
 import { useVeiculoData } from './hooks/useVeiculoData';
-import { CreateModal } from './components/create-modal/create-modal';
+import { CreateModal } from './components/register-modal/register-modal';
 
 function App() {
   const { data } = useVeiculoData();
@@ -14,10 +14,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Carros</h1>
-      {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
-      <button onClick={handleOpenModal}>Adicionar</button>
-     
+      <div className="title">
+        <h1>Carros</h1>
+      </div>
 
       <div className="card-grid">
         {data?.map(veiculoData =>
@@ -30,14 +29,17 @@ function App() {
             combustivel={veiculoData.combustivel}
             anoModelo={veiculoData.anoModelo}
             anoFabricacao={veiculoData.anoFabricacao}
-            quilometragem={veiculoData.quilometragem} 
+            quilometragem={veiculoData.quilometragem}
             potencia={veiculoData.potencia}
             placa={veiculoData.placa}
-            imagem={veiculoData.imagem}/>
+            imagem={veiculoData.imagem} />
         )}
-       
+
+        <div className="card-add">
+          {isModalOpen && <CreateModal closeModal={handleOpenModal} />}
+          <button className="add-button" onClick={handleOpenModal}>Adicionar</button>
+        </div>
       </div>
-      
     </div>
   )
 }

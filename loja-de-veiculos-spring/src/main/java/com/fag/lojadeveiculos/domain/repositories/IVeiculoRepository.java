@@ -4,5 +4,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
 
-public interface IVeiculoRepository extends JpaRepository<VeiculoBO, Long> {
-}
+public interface IVeiculoRepository extends JpaRepository<VeiculoBO, Long> {}

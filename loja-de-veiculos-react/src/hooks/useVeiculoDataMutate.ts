@@ -22,7 +22,7 @@ const putData = async (data: VeiculoData): AxiosPromise<any> => {
 
 export function useVeiculoDataMutatePost() {
     const queryClient = useQueryClient();
-    const mutate = useMutation({
+    const mutatePost = useMutation({
         mutationFn: postData,
         retry: 2,
         onSuccess: () => {
@@ -30,12 +30,12 @@ export function useVeiculoDataMutatePost() {
         }
     });
 
-    return mutate;
+    return mutatePost;
 }
 
 export function useVeiculoDataMutateDelete() {
     const queryClient = useQueryClient();
-    const mutate = useMutation({
+    const mutateDelete = useMutation({
         mutationFn: deleteData,
         retry: 2,
         onSuccess: () => {
@@ -43,5 +43,18 @@ export function useVeiculoDataMutateDelete() {
         }
     });
 
-    return mutate;
+    return mutateDelete;
+}
+
+export function useVeiculoDataMutatePut() {
+    const queryClient = useQueryClient();
+    const mutatePut = useMutation({
+        mutationFn: putData,
+        retry: 2,
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: ['veiculo-data'] });
+        }
+    });
+
+    return mutatePut;
 }
