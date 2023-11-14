@@ -6,8 +6,17 @@ Com ela, você pode criar novos registros de veículos, visualizar informações
 
 # Layout
 ## Catálogo
+Para cada objeto inserido, a aplicação gera automaticamente um card contendo todas as informações do veículo correspondente. 
+
+![Catalogo](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/9ba26748-1eb1-4cf1-a8ba-5f260d59ab79)
 
 ## Criação/Edição
+
+Ao clicar em 'Adicionar' em um 'card' vazio ou em 'Editar' em um veículo já cadastrado, uma modal contendo os campos de informações do veículo é exibida, possibilitando o preenchimento desses dados. 
+
+*Durante a edição, a modal é automaticamente preenchida com as informações existentes no 'card', simplificando para o usuário.
+
+![CriacaoEdicao](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/dc58fef4-92d9-420a-951b-3d37f7bea32f)
 
 
 # Tecnologias utilizadas
@@ -88,3 +97,7 @@ npm run dev
 # Autor
 
 Gabryel Alves de Freitas
+
+É uma aplicação bem simples mas acredito que já deu para demonstrar a utilização do Spring Boot, espero que goste 🤙.
+
+
