@@ -1,7 +1,8 @@
 # Loja de Veículos
 ## Sobre o projeto
 
-A aplicação consiste em um catálogo de veículos que oferece funcionalidades gerenciamento, permitindo realizar operações de criação, visualização, edição e exclusão (CRUD) de registros de veículos.
+A aplicação consiste em um catálogo de veículos que oferece funcionalidades de gerenciamento.
+Com ela, você pode criar novos registros de veículos, visualizar informações, realizar edições quando necessário e excluir registros existentes. Trata-se de uma aplicação simples projetada para ajudar no controle e organização de informações sobre veículos de forma rápida e eficaz.
 
 # Layout
 ## Catálogo
@@ -21,6 +22,7 @@ A aplicação consiste em um catálogo de veículos que oferece funcionalidades 
 - ReactJS
 - HTML / CSS 
 ## Dados
+- Geração do ReactJS: Vite
 - Manipulação no font end: axios / react-query
 - Banco de dados: H2 Database
 
@@ -31,10 +33,23 @@ A aplicação consiste em um catálogo de veículos que oferece funcionalidades 
 
 A estrura de pastas foi construída buscando os conceitos de arquitetura limpa e SOLID, cada pasta e arquivo com suas reponsabilidades.
 ### Back end
+- dto: Contém a classe que representa o objeto que será transitado pela nossa API.
+- entities: Aqui temos o BO(Business Objects), a entidade de negócio.
+- mappers: Mapeamento de dto para BO e de BO para dto.
+- repositories: Temos nossa interface.
+- usecases: Aqui seria nossos casos de uso, funcionalidades.
+- presentations/controllers: Responsável por ministrar os 'endpoints' e as operações HTTP da API.
+
 (Não criei uma pasta 'services' pois a aplicação não tem regras de negócio que precisam ser sepadas como 'service')
-![image](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/c711e01c-8d30-409e-ad2a-deb638d7e5ea)
+
+![image](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/a2f2d262-e07f-4f0c-996f-4607bfa1c891)
+
 
 ### Front end
+- components: Contém os componentes reutilizáveis que compõem a interface da aplicação.
+- hooks: Encapsula a lógica de comunicação com a API e fornece funcionalidades para realizar solicitações HTTP.
+- interface: interface TypeScript que descreve a estrutura e o formato dos dados.
+
 ![image](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/44ead05b-5d05-4483-b756-66f86cad0569)
 
 # Como executar o projeto
