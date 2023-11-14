@@ -1,8 +1,8 @@
-package com.fag.lojadeveiculos.domain.mapper;
+package com.fag.lojadeveiculos.domain.mappers;
 
-import com.fag.lojadeveiculos.domain.CombustivelEnum;
 import com.fag.lojadeveiculos.domain.dto.VeiculoDTO;
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
+import com.fag.lojadeveiculos.domain.usecases.CombustivelEnum;
 
 public class VeiculoMapper {
     public static VeiculoDTO toDTO(VeiculoBO veiculo) {

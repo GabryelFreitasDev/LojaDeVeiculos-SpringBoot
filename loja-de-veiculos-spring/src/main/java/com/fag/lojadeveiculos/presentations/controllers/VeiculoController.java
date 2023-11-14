@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fag.lojadeveiculos.domain.dto.VeiculoDTO;
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
-import com.fag.lojadeveiculos.domain.mapper.VeiculoMapper;
+import com.fag.lojadeveiculos.domain.mappers.VeiculoMapper;
 import com.fag.lojadeveiculos.domain.repositories.IVeiculoRepository;
 
 @RestController

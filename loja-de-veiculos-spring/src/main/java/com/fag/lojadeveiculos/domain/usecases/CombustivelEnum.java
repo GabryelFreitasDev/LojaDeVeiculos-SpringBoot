@@ -1,4 +1,4 @@
-package com.fag.lojadeveiculos.domain;
+package com.fag.lojadeveiculos.domain.usecases;
 
 import java.util.Arrays;
 import java.util.List;
