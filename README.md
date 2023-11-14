@@ -24,7 +24,18 @@ A aplicação consiste em um catálogo de veículos que oferece funcionalidades 
 - Manipulação no font end: axios / react-query
 - Banco de dados: H2 Database
 
-(Eu tinha iniciado com PostgreSQL, resolvi migrar para o H2 no intuito de facilitar caso queira rodar na sua máquina 🤙)
+(Eu tinha iniciado com PostgreSQL, resolvi migrar para o H2 no intuito de facilitar caso queira rodar na sua máquina)
+
+# Explicando Codigo
+## Estrutura de pastas
+
+A estrura de pastas foi construída buscando os conceitos de arquitetura limpa e SOLID, cada pasta e arquivo com suas reponsabilidades.
+### Back end
+(Não criei uma pasta 'services' pois a aplicação não tem regras de negócio que precisam ser sepadas como 'service')
+![image](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/c711e01c-8d30-409e-ad2a-deb638d7e5ea)
+
+### Front end
+![image](https://github.com/GabryelFreitasDev/LojaDeVeiculos-SpringBoot/assets/103697602/44ead05b-5d05-4483-b756-66f86cad0569)
 
 # Como executar o projeto
 
