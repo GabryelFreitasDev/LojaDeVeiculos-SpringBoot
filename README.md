@@ -45,7 +45,7 @@ A estrura de pastas foi construída buscando os conceitos de arquitetura limpa e
 - dto: Contém a classe que representa o objeto que será transitado pela nossa API.
 - entities: Aqui temos o BO(Business Objects), a entidade de negócio.
 - mappers: Mapeamento de dto para BO e de BO para dto.
-- repositories: Temos nossa interface.
+- repositories: Temos nossa interface extendendo o JPARepository.
 - usecases: Aqui seria nossos casos de uso, funcionalidades.
 - presentations/controllers: Responsável por ministrar os 'endpoints' e as operações HTTP da API.
 
