@@ -4,6 +4,7 @@ import { VeiculoData } from '../../interface/VeiculoData'
 import './card.css'
 import { CreateModal } from '../register-modal/register-modal';
 
+//Card dos veículos
 export function Card({ id, nome, valor, marca, cor, combustivel, anoFabricacao, anoModelo, quilometragem, potencia, placa, imagem }: VeiculoData) {
     const { mutate } = useVeiculoDataMutateDelete();
 

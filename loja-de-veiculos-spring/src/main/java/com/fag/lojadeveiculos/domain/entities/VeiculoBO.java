@@ -13,6 +13,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+//Aqui temos o BO(Business Objects), a entidade de negócio.
 @Entity
 @Table(name = "veiculo")
 @NoArgsConstructor

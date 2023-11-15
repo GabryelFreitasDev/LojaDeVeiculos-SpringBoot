@@ -7,6 +7,7 @@ import { Select } from "../inputs/select";
 import { Input } from "../inputs/input";
 import { NumberInput } from "../inputs/numberInput";
 
+//Modal de cadastro
 interface ModalProps {
     closeModal(): void
     data?: VeiculoData

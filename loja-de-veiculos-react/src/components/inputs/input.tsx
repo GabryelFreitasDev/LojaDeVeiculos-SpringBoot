@@ -1,3 +1,4 @@
+//Props do componente
 export interface InputProps {
     label: string
     value: string | number
@@ -7,6 +8,7 @@ export interface InputProps {
     maxLength?: number
 }
 
+//Template padrão dos inputs para reutilização do código e não precisar ficar reescrevendo
 export const Input = ({ label, value, updateValue, className, placeholder, maxLength }: InputProps) => {
     return (
         <>

@@ -1,3 +1,4 @@
+//Props do componente
 interface SelectProps {
     label: string;
     value: string | number;
@@ -6,6 +7,7 @@ interface SelectProps {
     className?: string
 }
 
+//Template padrão dos inputs numéricos da modal para reutilização do código e não precisar ficar reescrevendo
 export const Select = ({ label, value, options, updateValue, className }: SelectProps) => {
     return (
         <>

@@ -4,6 +4,7 @@ import { VeiculoData } from "../interface/VeiculoData";
 
 const API_URL = 'http://localhost:8080';
 
+// Responsável por executar os métodos POST,DELETE E PUT na API 
 const postData = async (data: VeiculoData): AxiosPromise<any> => {
     const response = axios.post(API_URL + '/veiculos', data);
     return response;

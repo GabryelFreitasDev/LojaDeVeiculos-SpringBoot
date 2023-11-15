@@ -4,6 +4,7 @@ import com.fag.lojadeveiculos.domain.dto.VeiculoDTO;
 import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
 import com.fag.lojadeveiculos.domain.usecases.CombustivelEnum;
 
+//Mapeamento de dto para BO e de BO para dto.
 public class VeiculoMapper {
     public static VeiculoDTO toDTO(VeiculoBO veiculo) {
         VeiculoDTO veiculoDTO = new VeiculoDTO();

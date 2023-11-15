@@ -42,3 +42,10 @@ button:focus-visible {
     background-color: #ffffff;
   }
 }
+
+header {
+  background-color: #2f2f2f;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}

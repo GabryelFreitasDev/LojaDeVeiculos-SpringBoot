@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.Setter;
 
+//Contém a classe que representa o objeto que será transitado pela nossa API;
 @Getter
 @Setter
 public class VeiculoDTO {

@@ -1,3 +1,4 @@
+//Interface para manipulação dos dados dos veículos
 export interface VeiculoData {
     id?: number;
     nome: string;

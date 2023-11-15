@@ -18,6 +18,7 @@ import com.fag.lojadeveiculos.domain.entities.VeiculoBO;
 import com.fag.lojadeveiculos.domain.mappers.VeiculoMapper;
 import com.fag.lojadeveiculos.domain.repositories.IVeiculoRepository;
 
+// Controller responsável pelos endpoints. (GET/POST/PUT/DELETE)
 @RestController
 @RequestMapping("veiculos")
 @CrossOrigin("*")

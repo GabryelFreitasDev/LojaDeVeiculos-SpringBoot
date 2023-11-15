@@ -4,6 +4,7 @@ import { VeiculoData } from "../interface/VeiculoData";
 
 const API_URL = 'http://localhost:8080';
 
+// Responsável por realizar o método GET na API e retornar os dados
 const fetchData = async (): AxiosPromise<VeiculoData[]> => {
     const response = axios.get(API_URL + '/veiculos');
     return response;
